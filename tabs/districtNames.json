@@ -1,0 +1,16 @@
+[
+  { "name": "All Sites", "code": "ALL" },
+  { "name": "Alberta Environment & Parks Canals", "code": "AEP Canals" },
+  { "name": "Aetna Irrigation District", "code": "AID" },
+  { "name": "Bow River Irrigation District", "code": "BRID" },
+  { "name": "Eastern Irrigation District", "code": "EID" },
+  { "name": "Lethbridge Northern Irrigation District", "code": "LNID" },
+  { "name": "Magrath Irrigation District", "code": "MID" },
+  { "name": "Mountain View Irrigation District", "code": "MVID" },
+  { "name": "Raymond Irrigation District", "code": "RID" },
+  { "name": "Ross Creek Irrigation District", "code": "RCID" },
+  { "name": "St. Mary River Irrigation District", "code": "SMRID" },
+  { "name": "Taber Irrigation District", "code": "TID" },
+  { "name": "United Irrigation District", "code": "UID" },
+  { "name": "Western Irrigation District", "code": "WID" }
+]

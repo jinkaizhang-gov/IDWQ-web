@@ -1,0 +1,760 @@
+/* ====================== BASE LAYOUT ====================== */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    overflow: hidden;
+}
+#container {
+    display: flex;
+    height: 100%;
+}
+
+/* ====================== SIDE PANEL ====================== */
+#sidePanel {
+    width: 460px;
+    background: #fff;
+    border-right: 1px solid #ccc;
+    /* ADDED FLEXBOX for sticky tabs */
+    display: flex;
+    flex-direction: column; 
+    overflow: hidden;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.15);
+    transition: margin-left 0.3s ease;
+    z-index: 2000;
+}
+#sidePanel.hidden {
+    margin-left: -460px;
+}
+
+#toggleButton {
+    position: absolute;
+    top: 20px;
+    left: 460px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #0077b6;
+    color: #0077b6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+    z-index: 99999;
+}
+#toggleButton.closed {
+    transform: rotate(180deg);
+}
+
+/* ====================== TABS (STICKY HEADER) ====================== */
+#tabs {
+    display: flex;
+    background: #e6f2f8;
+    border-bottom: 1px solid #ccc;
+    
+    /* STICKY POSITIONING (Simplified z-index from 20000) */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.tab {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    border-right: 1px solid #ccc;
+    user-select: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    flex: 0 0 auto;
+}
+.tab.active {
+    background: #fff;
+    border-bottom: 3px solid #0078c9;
+}
+
+.tab .material-symbols-outlined {
+    color: #0078c9;
+    font-size: 20px;
+}
+
+/* ====================== TAB CONTENT WRAPPER ====================== */
+#contentWrapper {
+    /* Added to manage the scrolling area */
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+/* ====================== WQ FILTERS & CUSTOM SELECTS ====================== */
+.filter-row {
+    display: flex;
+    gap: 15px; 
+    margin-bottom: 15px; 
+}
+
+.filter-group {
+    flex: 1; 
+}
+
+.filter-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.custom-select-wrapper {
+    position: relative;
+}
+
+.custom-select {
+    display: block;
+    width: 100%;
+    padding: 8px 30px 8px 10px; 
+    font-size: 14px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    appearance: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.custom-select:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.custom-select-wrapper::after {
+    content: "expand_more"; 
+    font-family: 'Material Symbols Outlined';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; 
+    color: #6c757d;
+    font-size: 20px;
+}
+
+.download-btn {
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #0078c9;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+.download-btn:hover:not(:disabled) {
+    background-color: #005691;
+}
+.download-btn:disabled {
+    background-color: #a0c3e3;
+    cursor: default;
+}
+
+/* ====================== MAP ====================== */
+#mapView {
+    height: 100vh !important;
+    width: 100% !important;
+    position: relative;
+    flex: 1 !important;
+}
+.leaflet-container {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+/* Combined map controls and legend */
+#mapLegend,
+#mapLayersPanel {
+    position: absolute;
+    z-index: 10000 !important;
+    pointer-events: auto !important;
+}
+
+/* Position the combined Layers/Basemap panel below the zoom controls */
+#mapLayersPanel {
+    top: 200px; 
+    right: 16px;
+}
+#mapLegend {
+    bottom: 16px;
+    right: 16px;
+    min-width: 190px;
+}
+
+.map-control-card {
+    background: rgba(255,255,255,0.95);
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.25);
+    padding: 10px 12px;
+    font-size: 13px;
+}
+
+/* Style for layer/basemap selection rows */
+.map-layer-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+/* ====================== CUSTOM ZOOM CONTROL (Zoom to Extent) ====================== */
+/* Mimics the Leaflet default control button style */
+#zoomToExtentControl {
+    /* This adds spacing between the default zoom control block and the new button */
+    margin-top: 5px;
+}
+
+#zoomToExtentBtn {
+    /* Inherit Leaflet's button styles */
+    display: block;
+    width: 30px; /* Standard Leaflet button size */
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    font-size: 18px; /* Material Symbol size */
+    border: none; /* Leaflet buttons use background/box-shadow for border effect */
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4);
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+}
+
+#zoomToExtentBtn:hover {
+    background-color: #f4f4f4;
+}
+
+/* ====================== LEGEND ====================== */
+.legend-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 4px 0;
+    font-size: 13px;
+}
+.legend-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+    border: 1px solid #6663;
+}
+
+/* WQ Index colors */
+.legend-excellent { background: #0235ee; }
+.legend-good      { background: #00b050; }
+.legend-fair      { background: #ffff00; }
+.legend-marginal  { background: #ff9600; }
+.legend-poor      { background: #ff0a0a; }
+.legend-na        { background: #d9d9d9; }
+
+/* Site-type/status legend colors */
+.legend-primary   { background: #00CFFF; }
+.legend-secondary { background: #D56BFF; }
+.legend-return    { background: #FFA500; }
+.legend-inactive  { background: #E0E0E0; }
+
+/* ====================== LABEL STYLE ====================== */
+.point-label {
+    font-size: 9px;
+    color: #000;
+    font-weight: 600;
+    white-space: nowrap;
+    pointer-events: none;
+    background: rgba(255,255,255,0.85);
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 1px 3px;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+.point-label.visible {
+    opacity: 1;
+}
+
+/* ====================== GUIDELINE TABLE STYLE ====================== */
+.guideline-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    font-size: 13px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.guideline-table h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.guideline-table thead {
+    background: #f5f7f8;
+    border-bottom: 1px solid #ccc;
+}
+.guideline-table th {
+    text-align: left;
+    padding: 8px 10px;
+    font-weight: 600;
+    color: #003b64;
+}
+.guideline-table td {
+    padding: 4px 10px;
+    border-bottom: 1px solid #eee;
+}
+.guideline-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* New styles for clickable rows */
+.guideline-table tbody tr {
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+.guideline-table tbody tr:hover {
+    background-color: #f0f8ff; 
+}
+
+/* ====================== COLLAPSE STYLES ====================== */
+.site-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px 10px;
+    background: #f5f7f8;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 15px !important; /* Spacing above */
+    margin-bottom: 0 !important;
+    transition: background-color 0.2s ease;
+    color: #003b64;
+}
+.site-list-header:hover {
+    background-color: #e0f2ff;
+}
+
+/* NEW: When expanded, flatten the bottom border radius for visual continuity with the content box */
+.site-list-header:not(.collapsed) {
+    border-radius: 4px 4px 0 0;
+}
+
+.site-list-content {
+    overflow: hidden;
+    max-height: 1000px; /* Large initial height for transition */
+    transition: max-height 0.3s ease-out;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0 0 4px 4px;
+    padding: 10px;
+}
+.site-list-content.hidden-content {
+    max-height: 0;
+    padding: 0 10px; /* Keep horizontal padding for alignment */
+    border: none;
+}
+.site-list-content .guideline-table {
+    margin-top: 0;
+    border: none;
+    border-radius: 0;
+}
+
+.expand-icon {
+    font-size: 24px !important;
+    color: #0078c9 !important;
+    transition: transform 0.3s ease;
+}
+
+/* ====================== POPUP STYLES (NEW) ====================== */
+/* Outer wrapper: remove default padding, constrain width */
+.leaflet-popup-content-wrapper {
+    max-width: 350px !important; /* Fixed maximum width for the whole popup */
+    padding: 0 !important; /* Remove default padding to let custom content fill the area */
+    overflow: hidden;
+}
+
+/* Inner content: no margin/padding so our .site-popup fills it */
+.leaflet-popup-content {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+}
+
+/* Main popup container */
+.site-popup {
+    width: 300px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.4;
+    /*TOP  RIGHT  BOTTOM  LEFT */
+    padding: 4px 4px 4px 4px !important;  
+    box-sizing: border-box;
+}
+
+
+/* Header style to match the orange bar */
+.site-popup-header {
+    background: #ff8c00;
+    color: white;
+    padding: 6px 10px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* NEW: round only top corners */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Photo container + image */
+.site-photo-container img {
+    width: 100%; /* Image fills the 300px width */
+    height: auto;
+    display: block;
+}
+
+/* Table container for attributes */
+.get-data-btn {
+    padding: 6px 12px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 5px;
+    width: 100%; /* Make the button full width */
+    box-sizing: border-box; /* Include padding/border in the width */
+}
+
+/* Tighten spacing for all headers inside the side panel */
+#sidePanel h2 {
+    margin-top: 4px !important;
+    margin-bottom: 6px !important;
+}
+
+/* --- Download Option Alignment and Styling --- */
+
+/* The main container is set to use flex to stack the header and options */
+.download-options {
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    gap: 8px; /* Space between options */
+}
+
+/* Style for the header text */
+.download-options-header {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-bottom: 5px;
+    display: block; /* Ensure it takes up its own line */
+}
+
+/* Wrapper for each individual radio option (crucial for alignment) */
+.download-options-wrapper {
+    display: flex;
+    align-items: center; /* Vertically center the radio button and the label */
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Hover state for better user interaction */
+.download-options-wrapper:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+}
+
+/* Selection state: Highlights the wrapper when the radio button inside is checked */
+.download-options-wrapper:has(input[type="radio"]:checked) {
+    background-color: #e6f0ff; /* Light blue background */
+    border-color: #007bff; /* Primary color border */
+}
+
+/* Style the input itself */
+.download-options-wrapper input[type="radio"] {
+    margin: 0; /* Remove default margin */
+    margin-right: 12px; /* Space between radio button and label text */
+    /* Add sizing for better click target */
+    width: 1.1em;
+    height: 1.1em;
+    cursor: pointer;
+}
+
+/* Style the label to take up the remaining space and align with the radio button */
+.download-options-wrapper label {
+    flex-grow: 1; /* Allow the label to fill the width */
+    font-weight: 500;
+    cursor: pointer;
+    /* Remove any default margin/padding that might cause misalignment */
+    padding: 0;
+    margin: 0;
+
+    /* ADD THIS LINE to make the font smaller */
+    font-size: 0.9em;
+}
+
+#mapLogoOverlay {
+    position: absolute;
+    left: 10px;         /* space from map left */
+    bottom: 10px;       /* space from map bottom */
+    z-index: 9999;      /* above map layers */
+    pointer-events: none; /* avoid blocking clicks */
+}
+
+#mapLogoOverlay img {
+    max-width: 320px;       /* matches your screenshot */
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;     /* optional – looks nicer */
+}
+
+/* ====================== RESET DISTRICT BUTTON (Minimal Fix - Color Change Only) ====================== */
+
+/* Leaflet-style reset button */
+.leaflet-reset-district-btn {
+    /* Standard Leaflet appearance: white background, grey border, shadow */
+    background: #fff;
+    border: 1px solid #ccc;
+    /* Removed blue 'color' property from here */
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0;
+    text-align: center;
+    display: block;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.4); /* Add standard Leaflet box shadow */
+    margin-top: 5px; /* Add slight spacing from the button above it (Zoom to Extent) */
+}
+
+.leaflet-reset-district-btn:hover {
+    background: #f4f4f4;
+}
+
+/* Icon: Use '↺' and ensure it's black/dark grey */
+.leaflet-reset-district-btn::before {
+    content: "↺"; /* The original circular arrow icon */
+    /* 💡 FIX: Set the color of the icon explicitly to black/dark grey */
+    color: #333; 
+    font-size: 20px;
+    line-height: 30px; /* Center icon vertically */
+    display: block;
+    /* Removed font-family to let it default to the page/browser font for the simple character */
+}
+
+.leaflet-reset-district-container {
+    z-index: 1200;
+    position: relative;
+}
+
+
+
+.sortable-table th {
+    cursor: pointer;
+    background-color: #f0f0f0;
+}
+
+.sortable-table th:hover {
+    background-color: #e0e0e0;
+}
+
+.sortable-table th.sorted-asc::after {
+    content: " ▲";
+}
+
+.sortable-table th.sorted-desc::after {
+    content: " ▼";
+}
+
+/* ====================== POLYGON FLOATING LABELS ====================== */
+.polygon-label {
+    font-size: 16px;
+    color: #888;         /* soft grey */
+    font-weight: 600;
+    white-space: nowrap;
+    background: rgba(255,255,255,0.85);
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 4px 8px;    /* slightly more padding */
+    pointer-events: none;
+}
+
+/* ====================== POPUP ATTRIBUTE TABLE ====================== */
+
+
+.popup-attr-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 6px;
+    font-size: 13px;
+}
+
+.popup-attr-table td {
+    padding: 4px 6px;
+    vertical-align: top;
+}
+
+.popup-attr-table tr:not(:last-child) td {
+    border-bottom: 1px solid #eee;
+}
+
+.popup-attr-table .attr-label {
+    font-weight: 600;
+    width: 42%;
+    color: #333;
+}
+
+.popup-attr-table .attr-value {
+    width: 58%;
+    color: #111;
+}
+
+.popup-attr-table tr:nth-child(odd) td {
+    background: #fafafa;
+}
+
+.wq-timeline-container {
+    margin-top: 10px;
+}
+
+.wq-timeline-label {
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.wq-timeline {
+    display: flex;
+    height: 18px;               /* <-- increased height */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.wq-timeline-segment {
+    flex: 1;               /* each year equal width */
+    cursor: pointer;       /* indicates tooltip */
+}
+
+/* Year labels container */
+.wq-timeline-years-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    margin-bottom: 2px;
+    padding: 0 2px;
+}
+
+/* explicitly align ends */
+.wq-year-left {
+    text-align: left;
+}
+.wq-year-right {
+    text-align: right;
+}
+
+/* ====================== POPUP ARROW COLOR ====================== */
+.leaflet-popup-tip {
+    background: #898888 !important;
+    border: 1px solid #ccc !important;
+}
+
+/* ===============coordinates display===============*/
+#mouseCoordDisplay {
+    position: absolute;
+    bottom: 6px;
+    left: 10px;
+    background: rgba(255,255,255,0.85);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    z-index: 1000;
+    pointer-events: none; /* don't block map clicks */
+    border: 1px solid rgba(0,0,0,0.15);
+}
+
+/* ===============hover style===============*/
+.hover-circle-highlight {
+    border: 3px dashed #ff4fa3;
+    background-color: rgba(141, 110, 252, 0.5); /* your #8d6efcff */
+    border-radius: 50%;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+/* Visible by default */
+#mapLayersPanel {
+  display: block;
+}
+
+/* Hidden state */
+#mapLayersPanel.hidden {
+  display: none;
+}
+
+
+
+/* Leaflet-style control button */
+#layerPanelToggleBtn {
+  background: white;
+  width: 32px;              /* MATCH Leaflet */
+  height: 32px;             /* MATCH Leaflet */
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+/* Make it look like other Leaflet controls */
+.leaflet-control-command {
+  border-radius: 4px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+}
+
+/* Normalize Material Symbols inside Leaflet buttons */
+#layerPanelToggleBtn .material-symbols-outlined {
+  font-size: 18px;          /* lighter visual weight */
+  line-height: 1;
+  font-weight: 300;
+  color: #333;
+}
+
+

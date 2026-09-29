@@ -1,0 +1,83 @@
+<h2>Water Quality Index</h2>
+
+<p>Show Water Quality Index values for:</p>
+
+<div class="filter-row">
+    <div class="filter-group">
+        <label class="filter-label">Index Year</label>
+        <div class="custom-select-wrapper">
+            <select id="yearSelect" class="custom-select" disabled></select>
+        </div>
+    </div>
+
+    <div class="filter-group">
+        <label class="filter-label">Irrigation District</label>
+        <div class="custom-select-wrapper">
+            <select id="districtSelect" class="custom-select" disabled></select>
+        </div>
+    </div>
+</div>
+<div id="wqSummary" style="margin-top: 10px; font-weight: 600"></div>
+
+<button id="downloadCsvBtn" class="download-btn" disabled style="margin-top: 10px">
+    Download Filtered WQ Index Data (.CSV)
+</button>
+
+<hr style="margin: 20px 0" />
+
+<p>
+    Annual Water Quality Index values have been calculated for each site using the
+    Canadian Council of Ministers of the Environment (CCME) Water Quality Index
+    that compares site specific water quality data to irrigation water quality
+    guidelines that were developed to protect all life stages of crop species
+    grown in Canada. Irrigation guidelines used for this index are for parameters
+    monitored over the entire study period and are listed at the bottom of this
+    page.
+</p>
+
+<p>Water Quality Index values are a numerical output between 0 and 100 and are calculated based on:</p>
+<ul>
+    <li>How many guidelines are exceeded</li>
+    <li>How often guidelines are exceeded</li>
+    <li>How much guidelines are exceeded by</li>
+</ul>
+<p>The rating system of water quality index values is:</p>
+
+<div style="padding: 10px; border: 1px solid #ccc; border-radius: 4px; background-color: #f9f9f9;">
+        <div class="legend-row">
+            <span class="legend-dot legend-excellent"></span> Excellent (95–100)
+        </div>
+        <div class="legend-row">
+            <span class="legend-dot legend-good"></span> Good (80–94.9)
+        </div>
+        <div class="legend-row">
+            <span class="legend-dot legend-fair"></span> Fair (65–79.9)
+        </div>
+        <div class="legend-row">
+            <span class="legend-dot legend-marginal"></span> Marginal (45–64.9)
+        </div>
+         <div class="legend-row">
+            <span class="legend-dot legend-poor"></span> Poor (0–44.9)
+        </div>
+         <div class="legend-row">
+            <span class="legend-dot legend-na"></span> N/A
+        </div>
+    </div>
+
+<h3>Irrigation Water Quality Guidelines</h3>
+<p>
+    Guidelines are from the
+    <a href="https://open.alberta.ca/publications/9781460138731" target="_blank">
+        Environmental Quality Guidelines for Alberta’s Surface Waters
+    </a>
+    published by the Government of Alberta:
+</p>
+
+<div id="guidelineTableContainer">
+    <p>Loading guidelines…</p>
+</div>
+
+<p style="margin-top: 6px; font-size: 12px">
+    * Set at detection limit because guideline is below the laboratory detection
+    limit.
+</p>

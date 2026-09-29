@@ -1,0 +1,51 @@
+<h2>Data Download</h2>
+<p>
+  Select dot on map to see specific site information. Selection filters below
+  can be used to export data from multiple sites to a .csv file. Water
+  quality values less than laboratory detection limits are indicated by 
+  <strong>&lt;</strong> (less than) or <strong>ND</strong> (not detected).
+</p>
+
+<div class="download-options" style="margin-bottom: 20px">
+  <span class="download-options-header">Download Option:</span>
+
+  <div class="download-options-wrapper">
+    <input
+      type="radio"
+      id="modeFiltered"
+      name="downloadMode"
+      value="filtered"
+      checked
+    />
+    <label for="modeFiltered">Select Sites by District </label>
+  </div>
+
+  <div class="download-options-wrapper">
+    <input type="radio" id="modeFull" name="downloadMode" value="full" />
+    <label for="modeFull">All Sites (including Sites Not on Map)</label>
+  </div>
+</div>
+
+<div id="filteredModeContainer">
+  <p id="siteListIntroText">
+    Select a district to view the sites. Click a site row to zoom the map.
+  </p>
+  <label class="filter-label" for="dataDistrictSelect"
+    >Irrigation District</label
+  >
+  <div class="custom-select-wrapper" style="margin-bottom: 20px">
+    
+    <select id="dataDistrictSelect" class="custom-select" disabled></select>
+  </div>
+
+  <div id="dataSiteListContainer"></div>
+</div>
+
+<button
+  id="downloadSiteDataBtn"
+  class="download-btn"
+  disabled
+  style="margin-top: 20px"
+>
+  Download Measurement Data (Filtered Sites)
+</button>

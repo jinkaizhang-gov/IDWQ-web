@@ -1,0 +1,1397 @@
+{
+	"IrrDist": {
+		"fieldName": "Irrigation District",
+		"units": "",
+		"guideline": ""
+	},
+	"Site": {
+		"fieldName": "Site",
+		"units": "",
+		"guideline": ""
+	},
+	"MeasureYear": {
+		"fieldName": "Year",
+		"units": "",
+		"guideline": ""
+	},
+	"MeasureTimeStamp": {
+		"fieldName": "Time Stamp",
+		"units": "",
+		"guideline": ""
+	},
+	"WaterTemp": {
+		"fieldName": "Water Temperature",
+		"units": "degrees C",
+		"guideline": ""
+	},
+	"TSS": {
+		"fieldName": "Total Suspended Solids",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"pH": {
+		"fieldName": "pH",
+		"units": "",
+		"guideline": ""
+	},
+	"EC": {
+		"fieldName": "Electric conductivity",
+		"units": "dS/m",
+		"guideline": ""
+	},
+	"Ca_Diss": {
+		"fieldName": "Dissolved Calcium",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"Mg_Diss": {
+		"fieldName": "Dissolved Magnesium",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"Na_Diss": {
+		"fieldName": "Dissolved Sodium",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"K_Diss": {
+		"fieldName": "Dissolved Potassium",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"SAR": {
+		"fieldName": "Sodium adsorption ratio",
+		"units": "",
+		"guideline": 5.0
+	},
+	"Fe_Diss": {
+		"fieldName": "Dissolved Iron",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"Mn_Diss": {
+		"fieldName": "Dissolved Manganese",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"Cl": {
+		"fieldName": "Chloride",
+		"units": "mg/L",
+		"guideline": 178.0
+	},
+	"SO4": {
+		"fieldName": "Sulphate",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"HCO3": {
+		"fieldName": "Bicarbonate as CaCO3",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"CO3": {
+		"fieldName": "Carbonate as CaCO3",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"OH": {
+		"fieldName": "Hydroxide as CaCO3",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"Alk": {
+		"fieldName": "Total Alkalinity as CaCO3",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"Hard": {
+		"fieldName": "Hardness as CaCO3",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"Ion": {
+		"fieldName": "Ion Balance",
+		"units": "%",
+		"guideline": ""
+	},
+	"TDS": {
+		"fieldName": "Total dissolved solids",
+		"units": "mg/L",
+		"guideline": 500.0
+	},
+	"TN": {
+		"fieldName": "Total nitrogen",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"TKN": {
+		"fieldName": "Toltal kjeldahl nitrogen",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"NO3_N": {
+		"fieldName": "Nitrate as N",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"NO2_N": {
+		"fieldName": "Nitrite as N",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"NO3_N_NO2_N": {
+		"fieldName": "Nitrate as N + Nitrite as N",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"NH3_N": {
+		"fieldName": "Ammonia as N",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"TP": {
+		"fieldName": "Total phosphorus",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"TDP": {
+		"fieldName": "Total dissolved phosphorus",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"PO4_P": {
+		"fieldName": "Dissolved reactive phosphorus",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"Chl_a": {
+		"fieldName": "Chlorophyll-a",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"E_coli": {
+		"fieldName": "Escherichia coli",
+		"units": "cfu/100mL",
+		"guideline": 100.0
+	},
+	"Al": {
+		"fieldName": "Aluminium total",
+		"units": "mg/L",
+		"guideline": 5.0
+	},
+	"Sb": {
+		"fieldName": "Antimony total",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"As_": {
+		"fieldName": "Arsenic total",
+		"units": "mg/L",
+		"guideline": 0.16
+	},
+	"Ba": {
+		"fieldName": "Barium total",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"Be": {
+		"fieldName": "Beryllium total",
+		"units": "mg/L",
+		"guideline": 0.1
+	},
+	"Bi": {
+		"fieldName": "Bismuth total",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"B": {
+		"fieldName": "Boron total",
+		"units": "mg/L",
+		"guideline": 0.5
+	},
+	"Cd": {
+		"fieldName": "Cadmium total",
+		"units": "mg/L",
+		"guideline": 8.2
+	},
+	"Cr": {
+		"fieldName": "Chromium total",
+		"units": "mg/L",
+		"guideline": 4.9
+	},
+	"Co": {
+		"fieldName": "Cobalt total",
+		"units": "mg/L",
+		"guideline": 0.05
+	},
+	"Cu": {
+		"fieldName": "Copper total",
+		"units": "mg/L",
+		"guideline": 0.2
+	},
+	"Fe": {
+		"fieldName": "Iron total",
+		"units": "mg/L",
+		"guideline": 5.0
+	},
+	"Pb": {
+		"fieldName": "Lead total",
+		"units": "mg/L",
+		"guideline": 0.2
+	},
+	"Li": {
+		"fieldName": "Lithium total",
+		"units": "mg/L",
+		"guideline": 2.5
+	},
+	"Mg": {
+		"fieldName": "Magnesium total",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"Mn": {
+		"fieldName": "Manganese total",
+		"units": "mg/L",
+		"guideline": 0.2
+	},
+	"Hg": {
+		"fieldName": "Mercury total",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"Mo": {
+		"fieldName": "Molybdenum total",
+		"units": "mg/L",
+		"guideline": 0.01
+	},
+	"Ni": {
+		"fieldName": "Nickel total",
+		"units": "mg/L",
+		"guideline": 0.2
+	},
+	"K": {
+		"fieldName": "Potassium total",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"Se": {
+		"fieldName": "Selenium total",
+		"units": "mg/L",
+		"guideline": 0.02
+	},
+	"Si": {
+		"fieldName": "Silicon total",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"Ag": {
+		"fieldName": "Silver total",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"Na": {
+		"fieldName": "Sodium total",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"Sr": {
+		"fieldName": "Strontium total",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"S": {
+		"fieldName": "Sulfur total",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"Tl": {
+		"fieldName": "Thallium total",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"Sn": {
+		"fieldName": "Tin total",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"Ti": {
+		"fieldName": "Titanium total",
+		"units": "mg/L",
+		"guideline": ""
+	},
+	"U": {
+		"fieldName": "Uranium total",
+		"units": "mg/L",
+		"guideline": 0.01
+	},
+	"V": {
+		"fieldName": "Vanadium total",
+		"units": "mg/L",
+		"guideline": 0.1
+	},
+	"Zn": {
+		"fieldName": "Zinc total",
+		"units": "mg/L",
+		"guideline": 5.0
+	},
+	"AMPA": {
+		"fieldName": "Aminomethyl phosphonic acid",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Gluf": {
+		"fieldName": "Glufosinate",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Glyph": {
+		"fieldName": "Glyphosate",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"F2_4_D": {
+		"fieldName": "2,4-Dichlorophenoxyacetic acid ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"F2_4_DB": {
+		"fieldName": "4-(2,4-dichlorophenoxy)butyric acid ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"F2_4_DCP": {
+		"fieldName": "2,4-Dichlorophenol",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Acet": {
+		"fieldName": "Acetamiprid ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Alac": {
+		"fieldName": "Alachlor",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Aldr": {
+		"fieldName": "Aldrin",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Alli": {
+		"fieldName": "Allidochlor",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Amet": {
+		"fieldName": "Ametoctradin ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Atra": {
+		"fieldName": "Atrazine",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Azin": {
+		"fieldName": "Azinphos-methyl",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Azos": {
+		"fieldName": "Azoxystrobin",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Bena": {
+		"fieldName": "Benalaxyl",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Benf": {
+		"fieldName": "Benfluralin",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Bent": {
+		"fieldName": "Bentazon",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Benz": {
+		"fieldName": "Benzoylprop-Ethyl",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Bifz": {
+		"fieldName": "Bifenazate",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Bife": {
+		"fieldName": "Bifenthrin",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Bixa": {
+		"fieldName": "Bixafen ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Brof": {
+		"fieldName": "Broflanilide ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Broc": {
+		"fieldName": "Bromacil",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Bro_E": {
+		"fieldName": "Bromophos-Ethyl",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Brop": {
+		"fieldName": "Bromopropylate",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Brox": {
+		"fieldName": "Bromoxynil",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Bosc": {
+		"fieldName": "Boscalid",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Bupi": {
+		"fieldName": "Bupirimate",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Buta": {
+		"fieldName": "Butachlor",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Butr": {
+		"fieldName": "Butralin",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Buty": {
+		"fieldName": "Butylate",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Capt": {
+		"fieldName": "Captan",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Carb": {
+		"fieldName": "Carbaryl",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Crbf": {
+		"fieldName": "Carbofuran",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Carbx": {
+		"fieldName": "Carboxin ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Carf": {
+		"fieldName": "Carfentrazone-ethyl",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Chit": {
+		"fieldName": "Chlorantraniliprole ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"c_Chl": {
+		"fieldName": "cis-Chlordane",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"t_Ch": {
+		"fieldName": "t-Chlordane",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Chlm": {
+		"fieldName": "Chlorimuron ethyl ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Chmp": {
+		"fieldName": "Chlormephos",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Chrn": {
+		"fieldName": "Chloroneb",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Chlo": {
+		"fieldName": "Chlorothalonil",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Chpy": {
+		"fieldName": "Chlorpyrifos",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Chl_M": {
+		"fieldName": "Chlorpyrifos-Methyl",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Chl_D": {
+		"fieldName": "Chlorthal-Dimethyl",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Chtm": {
+		"fieldName": "Chlorthiamid",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Clet": {
+		"fieldName": "Clethodim ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Clod": {
+		"fieldName": "Clodinafop-propargyl",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Clom": {
+		"fieldName": "Clomazone",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Clop": {
+		"fieldName": "Clopyralid",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Clora": {
+		"fieldName": "Cloransulam methyl ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Cloth": {
+		"fieldName": "Clothianidin ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Cyan": {
+		"fieldName": "Cyantraniliprole ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Cycl": {
+		"fieldName": "Cycloate",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Cyfl": {
+		"fieldName": "Cyfluthrin",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Cypb": {
+		"fieldName": "Cypermethrin-beta",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Cypz": {
+		"fieldName": "Cypermethrin-zeta",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"CyhL": {
+		"fieldName": "Cyhalothrin lambda",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Cypr": {
+		"fieldName": "Cyprodinil",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"o_p_DDD": {
+		"fieldName": "o,p-Dichlorodiphenyldichloroethane",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"p_p_DDD": {
+		"fieldName": "p,p-Dichlorodiphenyldichloroethane",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"o_p_DDE": {
+		"fieldName": "o,p-Dichlorodiphenyldichloroethylene",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"p_p_DDE": {
+		"fieldName": "p,p-Dichlorodiphenyldichloroethylene",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"o_p_DDT": {
+		"fieldName": "o,p-Dichlorodiphenyltrichloroethane",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"p_p_DDT": {
+		"fieldName": "p,p-Dichlorodiphenyltrichloroethane",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Delt": {
+		"fieldName": "Deltamethrin",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Desm": {
+		"fieldName": "Desmetryn",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Diaz": {
+		"fieldName": "Diazinon",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Dicm": {
+		"fieldName": "Dicamba",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Dicb": {
+		"fieldName": "Dichlobenil",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Dcpr": {
+		"fieldName": "Dichlorprop",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Dicv": {
+		"fieldName": "Dichlorvos",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Dicl": {
+		"fieldName": "Dichlofenthion",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Dicf": {
+		"fieldName": "Diclofop",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Diel": {
+		"fieldName": "Dieldrin",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Dife": {
+		"fieldName": "Difenoconazole",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Dimc": {
+		"fieldName": "Dimethachlor",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Dimt": {
+		"fieldName": "Dimethenamid-P",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Dime": {
+		"fieldName": "Dimethoate",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Dimh": {
+		"fieldName": "Dimethomorph",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Dino": {
+		"fieldName": "Dinotefuran ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Diox": {
+		"fieldName": "Dioxathion",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Diph": {
+		"fieldName": "Diphenamid",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Diur": {
+		"fieldName": "Diuron",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Endo": {
+		"fieldName": "alpha-Endosulfan",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Endr": {
+		"fieldName": "Endrin",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"EPTC": {
+		"fieldName": "EPTC_(S-ethyl_dipropylthiocarbamate)",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Etfl": {
+		"fieldName": "Ethalfluralin",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Ethi": {
+		"fieldName": "Ethion",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Etho": {
+		"fieldName": "Ethofumesate",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Etra": {
+		"fieldName": "Etradiazole",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Etri": {
+		"fieldName": "Etrimphos",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Famx": {
+		"fieldName": "Famoxadone",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Fena": {
+		"fieldName": "Fenamidone",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Fenc": {
+		"fieldName": "Fenchlorphos",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Fenh": {
+		"fieldName": "Fenhexamid ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Feno": {
+		"fieldName": "Fenoxaprop",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Fent": {
+		"fieldName": "Fenthion",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Flam": {
+		"fieldName": "Flamoxadone ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Fla_I": {
+		"fieldName": "Flamprop-Isopropyl",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Fla_M": {
+		"fieldName": "Flamprop-Methyl",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Floni": {
+		"fieldName": "Flonicamid ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Flua": {
+		"fieldName": "Fluazifop-p-butyl",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Flud": {
+		"fieldName": "Fludioxonil",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Flum": {
+		"fieldName": "Flumetralin",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Flux": {
+		"fieldName": "Flumioxazin",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Flup": {
+		"fieldName": "Flupyradifurone ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Flur": {
+		"fieldName": "Fluroxypyr",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Flut": {
+		"fieldName": "Flutriafol",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Fluxa": {
+		"fieldName": "Fluxapyroxad ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Folp": {
+		"fieldName": "Folpet",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Fono": {
+		"fieldName": "Fonofos",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"a_HCH": {
+		"fieldName": "Hexachlorocyclohexane-alpha",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"b_HCH": {
+		"fieldName": "Hexachlorocyclohexane-beta",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"d_HCH": {
+		"fieldName": "Hexachlorocyclohexane-delta",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Lind": {
+		"fieldName": "Lindane_(Hexachlorocyclohexane-gamma)",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Halo": {
+		"fieldName": "Halosulfuron-methyl ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Hept": {
+		"fieldName": "Heptachlor",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"HepE": {
+		"fieldName": "trans-Heptachlor Epoxide",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"HexZ": {
+		"fieldName": "Hexazinone",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Imzb": {
+		"fieldName": "Imazamethabenz",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Imaz": {
+		"fieldName": "Imazethapyr",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Imid": {
+		"fieldName": "Imidacloprid ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Ipco": {
+		"fieldName": "Ipconazole",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Ipro": {
+		"fieldName": "Iprodione",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Isof": {
+		"fieldName": "Isofenphos",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Kres": {
+		"fieldName": "Kresoxim",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Mala": {
+		"fieldName": "Linuron ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Mala2": {
+		"fieldName": "Malathion",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"MCPA": {
+		"fieldName": "MCPA_(2-methyl-4-chlorophenoxyacetic_acid )",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"MCPA_EHE": {
+		"fieldName": "MCPA-EHE",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"MCPB": {
+		"fieldName": "MCPB-methyl",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"MCPP": {
+		"fieldName": "Mecoprop_(methylchlorophenoxypropionic_acid)",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Meta": {
+		"fieldName": "Metalaxyl",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Mecz": {
+		"fieldName": "Metolachlor",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Metp": {
+		"fieldName": "Metconazole",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Metc": {
+		"fieldName": "Methoprene",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Meto": {
+		"fieldName": "Methoxychlor",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Metf": {
+		"fieldName": "Metrafenone",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Metb": {
+		"fieldName": "Metribuzin",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Mire": {
+		"fieldName": "Mirex",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"MonL": {
+		"fieldName": "Monolinuron",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Mycb": {
+		"fieldName": "Myclobutanil",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Nale": {
+		"fieldName": "Naled",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Napr": {
+		"fieldName": "Napropamide",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Nico": {
+		"fieldName": "Nicotine",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Nite": {
+		"fieldName": "Nitenpyram ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Nitr": {
+		"fieldName": "Nitrapyrin",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Oxyc": {
+		"fieldName": "Oxycarboxin",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Oxfl": {
+		"fieldName": "Oxyfluorfen",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Pend": {
+		"fieldName": "Pendimethalin",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"c_Per": {
+		"fieldName": "cis-Permethrin",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"t_Per": {
+		"fieldName": "trans-Permethrin ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Phor": {
+		"fieldName": "Phorate",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Phos": {
+		"fieldName": "Phosmet",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Picl": {
+		"fieldName": "Picloram",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Pico": {
+		"fieldName": "Picoxystrobin",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"PipB": {
+		"fieldName": "Piperonyl butoxide",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Pica": {
+		"fieldName": "Pirimicarb",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Pir_E": {
+		"fieldName": "Pirimiphos-Ethyl",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Pir_M": {
+		"fieldName": "Pirimiphos-Methyl",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Proc_": {
+		"fieldName": "Procymidone",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Prom": {
+		"fieldName": "Prometon",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Prty": {
+		"fieldName": "Prometryn",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Prof": {
+		"fieldName": "Propetamphos",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Prop": {
+		"fieldName": "Propham",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Proi": {
+		"fieldName": "Propiconazole",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Prox": {
+		"fieldName": "Propoxur",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Propo": {
+		"fieldName": "Propoxycarbazone sodium salt ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Proa": {
+		"fieldName": "Propyzamide",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"ProD": {
+		"fieldName": "Prothioconazole-Desthio",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Pyme": {
+		"fieldName": "Pymetrozine",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Pyra": {
+		"fieldName": "Pyraclostrobin",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Pyras": {
+		"fieldName": "Pyrasulfotole ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Pyrd": {
+		"fieldName": "Pyridaben",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Pyrm": {
+		"fieldName": "Pyrimethanil",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Pyro": {
+		"fieldName": "Pyroxasulfone ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Quin": {
+		"fieldName": "Quinclorac",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Quix": {
+		"fieldName": "Quinoxyfen",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Quit": {
+		"fieldName": "Quintozene",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Quiz": {
+		"fieldName": "Quizalofop-ethyl",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Safl": {
+		"fieldName": "Saflufenacil ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Seda": {
+		"fieldName": "Sedaxane ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Sima": {
+		"fieldName": "Simazine",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Spid": {
+		"fieldName": "Spirodiclofen",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Spir": {
+		"fieldName": "Spiromesifen",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Spix": {
+		"fieldName": "Spiroxamine",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Slfz": {
+		"fieldName": "Sulfentrazone",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Sulf": {
+		"fieldName": "Sulfotep",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Sulfo": {
+		"fieldName": "Sulfoxaflor ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Sulp": {
+		"fieldName": "Sulprophos",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Tebu": {
+		"fieldName": "Tebuconazole",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Temb": {
+		"fieldName": "Tembotrione ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Tebc": {
+		"fieldName": "Terbacil",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Tebf": {
+		"fieldName": "Terbufos",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Tebt": {
+		"fieldName": "Terbutryn",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Tetr": {
+		"fieldName": "Tetraconazole ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Tefo": {
+		"fieldName": "Tetradifon",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Tetm": {
+		"fieldName": "Tetramethrin I",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Tesu": {
+		"fieldName": "Tetrasul",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Thiac": {
+		"fieldName": "Thiacloprid ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Tral": {
+		"fieldName": "Triallate",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Thiam": {
+		"fieldName": "Thiamethoxam ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Tric": {
+		"fieldName": "Triclopyr",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Trife": {
+		"fieldName": "Thifensulfuron-methyl ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Trif": {
+		"fieldName": "Trifloxystrobin",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Trfl": {
+		"fieldName": "Trifluralin",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Thio": {
+		"fieldName": "Thiophanate-methyl ",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Trit": {
+		"fieldName": "Triticonazole",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Vinc": {
+		"fieldName": "Vinclozolin",
+		"units": "ug/L",
+		"guideline": ""
+	},
+	"Zoxm": {
+		"fieldName": "Zoxamide",
+		"units": "ug/L",
+		"guideline": ""
+	}
+}

@@ -1,0 +1,31 @@
+add zoom to selected content
+add reset district selection
+display all points, but highlight the selected ones
+User selects district & year
+
+Switches tabs, Comes back to WQ tab, The same year is preserved
+
+guidlines from jsonfile, sort columns (may be dated)
+
+polygon layers and label show up when zoom > 10
+
+add landing page
+
+add lat/lon display
+
+add user-friendly column name, unit and guidlines for download
+
+add the hover on the table
+
+Note: the guieline table in WQ index page is not consistent with the field.json. need to be reinvestigated in the future.
+
+
+---big changes in this version:
+	*split one big app.js into 9 smaller js files for better maintenance
+	*change the geojson to jsonfiles (just the file name) to ensure the web server can load the data
+	**geojson file is ok for leaflet lib, but caused problems for normal js files
+	*fix the bug : when uncheck the municipality, the polygons are gone, but the label is still on.
+	
+	
+	
+as

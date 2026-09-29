@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <title>IDWQ – Web Map</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet-responsive-popup@1.0.0/leaflet.responsive.popup.css"
+    />
+    <script src="https://unpkg.com/leaflet-responsive-popup@1.0.0/leaflet.responsive.popup.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+
+    <!-- css defined for this project -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="sidePanel">
+        <div id="tabs">
+          <div class="tab active" data-target="intro">
+            <span class="material-symbols-outlined">info</span>
+            <span>Intro</span>
+          </div>
+          <div class="tab" data-target="data">
+            <span class="material-symbols-outlined">table_chart</span>
+            <span>Data</span>
+          </div>
+          <div class="tab" data-target="wq">
+            <span class="material-symbols-outlined">water</span>
+            <span>WQ Index</span>
+          </div>
+          <div class="tab" data-target="pubs">
+            <span class="material-symbols-outlined">menu_book</span>
+            <span>Publications</span>
+          </div>
+        </div>
+
+        <div id="contentWrapper">
+          <div id="tabContentContainer" style="padding: 18px"></div>
+        </div>
+      </div>
+
+      <div id="toggleButton">
+        <span class="material-symbols-outlined">chevron_left</span>
+      </div>
+
+      <div id="mapView">
+        <div id="mapLayersPanel" class="hidden">
+          <div class="map-control-card">
+            <b>Basemap</b><br />
+            <label class="map-layer-item">
+              <input
+                type="radio"
+                name="basemap-select"
+                class="basemap-toggle"
+                data-basemap-id="Esri Topo"
+              />
+              Esri Topo
+            </label>
+            <label class="map-layer-item">
+              <input
+                type="radio"
+                name="basemap-select"
+                class="basemap-toggle"
+                data-basemap-id="OpenStreetMap"
+                checked
+              />
+              OpenStreetMap
+            </label>
+            <label class="map-layer-item">
+              <input
+                type="radio"
+                name="basemap-select"
+                class="basemap-toggle"
+                data-basemap-id="Esri Imagery"
+              />
+              Esri Imagery
+            </label>
+
+            <hr style="border: 0; border-top: 1px solid #ccc; margin: 8px 0" />
+
+            <b>Layers</b><br />
+            <label class="map-layer-item">
+              <input
+                type="checkbox"
+                class="layer-toggle"
+                data-layer-id="points"
+                checked
+              />
+              IDWQ Sites
+            </label>
+
+            <label>
+            <input
+              type="checkbox"
+              class="layer-toggle"
+              data-layer-id="polygons"
+              checked
+            >
+            Municipality
+          </label>
+          </div>
+        </div>
+
+        <div id="layerPanelToggleControl">
+          <a
+            id="layerPanelToggleBtn"
+            class="leaflet-control-command"
+            title="Layers"
+            role="button"
+            aria-label="Layers"
+          >
+            <span class="material-symbols-outlined">layers</span>
+          </a>
+        </div>
+
+
+        <div id="zoomToExtentControl">
+          <a
+            id="zoomToExtentBtn"
+            title="Zoom to current filtered extent"
+            class="leaflet-control-command zoom-to-extent-btn"
+            role="button"
+            aria-label="Zoom to Extent"
+          >
+            <span class="material-symbols-outlined">zoom_out_map</span>
+          </a>
+        </div>
+
+        <div id="mapLegend" class="map-control-card"></div>
+
+         <div id="mouseCoordDisplay"></div>
+      </div>
+    </div>
+
+    <script type="module" src="js/constants.js"></script>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

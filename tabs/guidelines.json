@@ -1,0 +1,15 @@
+[
+  { "Parameter": "Sodium Adsorption Ratio", "Guideline": "5" },
+  { "Parameter": "Chloride", "Guideline": "178 mg/L" },
+  { "Parameter": "Total Dissolved Solids", "Guideline": "500 mg/L" },
+  { "Parameter": "Escherichia coli", "Guideline": "100 cfu/100mL" },
+  { "Parameter": "Atrazine", "Guideline": "10 µg/L" },
+  { "Parameter": "Bromacil", "Guideline": "0.2 µg/L" },
+  { "Parameter": "Bromoxynil", "Guideline": "0.44 µg/L" },
+  { "Parameter": "Dicamba", "Guideline": "0.026 µg/L*" },
+  { "Parameter": "Diclofop", "Guideline": "0.24 µg/L" },
+  { "Parameter": "MCPA", "Guideline": "0.04 µg/L" },
+  { "Parameter": "Metolachlor", "Guideline": "28 µg/L" },
+  { "Parameter": "Metribuzin", "Guideline": "0.5 µg/L" },
+  { "Parameter": "Simazine", "Guideline": "0.5 µg/L" }
+]
